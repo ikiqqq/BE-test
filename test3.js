@@ -15,9 +15,9 @@ const data = [
 
 function result(data) {
   // Your Code Here
-  for (const key in data) {
-    if (data[key] === null && data[key] === undefined) {
-      delete data[key];
+  for (let i = 0; i<data.length; i++) {
+    if (data[i] === null && data[i] === undefined) {
+      data.filter();
     }
   }
 }
