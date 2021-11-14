@@ -15,11 +15,14 @@ const data = [
 
 function result(data) {
   // Your Code Here
-  for (let i = 0; i<data.length; i++) {
-    if (data[i] === null && data[i] === undefined) {
-      data.filter();
-    }
-  }
+  const cleanedArray = [];
+   data.forEach((val) => {
+      if (val !== null) {
+         cleanedArray.push(val);
+      }
+   });
+
+   return cleanedArray;
 }
 
 console.log(result(data));
