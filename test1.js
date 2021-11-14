@@ -64,11 +64,9 @@ const sessions = [
 
 function result(sessions) {
   // Your Code Here
-  // const summaries = sessions.map((e) => {
-  //       return [e]
-  //    })
-     const summaries = sessions.map((e,i) =>{
-      return `${this.session_id},${this.time}, classes [${this.class}], students [${this.student}]`
+  const getSession = [];
+  const summaries = sessions.map((e) => {
+    return [e]
     })
     console.log(summaries);
 }
